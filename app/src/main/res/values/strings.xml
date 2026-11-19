@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PersonalizatorTekstu</string>
+    <string name="tv_text_default">TextView</string>
+    <string name="btn_change_text">Zmień tekst</string>
+    <string name="btn_change_color">Zmień kolor tekstu</string>
+    <string name="btn_change_bg">Zmień tło</string>
+    <string name="switch_night">Tryb nocny</string>
+    <string name="tv_opacity_default">Przezroczystość tekstu: 100%</string>
+</resources>
