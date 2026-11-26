@@ -1,61 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rootLayout"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/tlo1"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tlo1" />
 
     <LinearLayout
-        android:id="@+id/cardLayout"
+        android:id="@+id/rootLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/card_bg"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="24dp">
 
-        <TextView
-            android:id="@+id/tvText"
+        <LinearLayout
+            android:id="@+id/panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/card_bg"
             android:gravity="center"
-            android:textColor="@color/text_color"
-            android:textSize="26sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:padding="24dp">
 
-        <Button
-            android:id="@+id/btnChangeText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Zmień tekst" />
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textSize="26sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnChangeColor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Zmień kolor tekstu" />
+            <Button
+                android:id="@+id/btnChangeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/btn_change_text" />
 
-        <Button
-            android:id="@+id/btnChangeBg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Zmień tło" />
+            <Button
+                android:id="@+id/btnChangeColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_change_color" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/switchNight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Tryb nocny"
-            android:textColor="@color/text_color" />
+            <Button
+                android:id="@+id/btnChangeBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_change_bg" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchNight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/switch_night"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/tvAlphaLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tv_alpha_label"
+                android:textColor="@color/text_color" />
+
+            <SeekBar
+                android:id="@+id/seekAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="100" />
+
+            <TextView
+                android:id="@+id/tvAlphaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tv_alpha_layout"
+                android:textColor="@color/text_color" />
+
+            <SeekBar
+                android:id="@+id/seekAlphaL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="100" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>

@@ -1,9 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PersonalizatorTekstu</string>
-    <string name="tv_text_default">TextView</string>
+    <string-array name="texts">
+        <item>Bajo Jajo</item>
+        <item>Dzień dobry! Albo i nie</item>
+        <item>Witaj ktosiu!</item>
+        <item>Projekt jakiś</item>
+    </string-array>
     <string name="btn_change_text">Zmień tekst</string>
     <string name="btn_change_color">Zmień kolor tekstu</string>
     <string name="btn_change_bg">Zmień tło</string>
     <string name="switch_night">Tryb nocny</string>
-    <string name="tv_opacity_default">Przezroczystość tekstu: 100%</string>
+    <string name="tv_alpha_label">Przezroczystość tekstu: 100%</string>
+    <string name="tv_alpha_label_format">Przezroczystość tekstu: %d%%</string>
+    <string name="tv_alpha_layout">Przezroczystość tła panelu: 100%</string>
+    <string name="tv_alpha_layout_format">Przezroczystość tła panelu: %d%%</string>
 </resources>
